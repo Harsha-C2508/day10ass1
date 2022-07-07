@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ProductDetails = () => {
     const [product,setProduct] = useState({});
@@ -20,6 +20,7 @@ const ProductDetails = () => {
         </div>
         <div>
           <h2>Amount : ₹ {product.price}</h2>
+          <Link to='/product'>Go back</Link>
         </div>
     </div>
   )
